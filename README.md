@@ -12,9 +12,13 @@ Assuming that you have checked out fibonacci repository, you can follow these co
    pip install -r requirements.txt
 ```
 
-Then run the command - 
+## Then run the command - 
 
-```python manage.py``` 
+```python manage.py runserver``` 
+
+## you can see the live demo here - 
+
+```https://fibcalculator.herokuapp.com/fibonacci-calculator/```
 
 
 
