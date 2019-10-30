@@ -27,7 +27,7 @@
            let N = document.getElementById("fibIndex").value;
             var startTime = new Date().getTime();
             var xmlHttp = new XMLHttpRequest();
-            xmlHttp.open( "GET", 'http://fibcalculator.herokuapp.com/fibonacci-calculator/calculate?N='+ N, false );
+            xmlHttp.open( "GET", 'https://fibcalculator.herokuapp.com/fibonacci-calculator/calculate?N='+ N, false );
             xmlHttp.send( null );
             var stopTime = new Date().getTime();
             <!--alert(xmlHttp.responseText);-->
