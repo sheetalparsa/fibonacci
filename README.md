@@ -18,7 +18,7 @@ Assuming that you have checked out fibonacci repository, you can follow these co
 
 ## you can see the live demo here - 
 
-```https://fibcalculator.herokuapp.com/fibonacci-calculator/```
+https://fibcalculator.herokuapp.com/fibonacci-calculator/
 
 
 
