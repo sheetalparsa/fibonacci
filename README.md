@@ -4,7 +4,7 @@ Assuming that you have checked out fibonacci repository, you can follow these co
 
 ```cd fibonacci```
 
-##First create a virtual enviorment - 
+## First create a virtual enviorment - 
 
 ```virtualenv -p {{python-path}} .venv
    source .venv/bin/activate
