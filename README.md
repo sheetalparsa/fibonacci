@@ -2,7 +2,7 @@
 
 Assuming that you have checked out fibonacci repository, you can follow these commands for setup:
 
-```cd fibonacci``
+```cd fibonacci```
 
 ##First create a virtual enviorment - 
 
