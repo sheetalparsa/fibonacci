@@ -34,7 +34,7 @@ SECRET_KEY = '#w8oa_f3g$z*rmquex9l7w$k_sw5#ufbeb8)+gi&a!tkk4g(lf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fibcalculator.herokuapp.com']
 
 
 # Application definition
