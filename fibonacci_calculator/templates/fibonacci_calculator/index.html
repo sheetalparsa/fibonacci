@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci Calculator</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'fibonacci_calculator/index.css' %}">
+</head>
+<body>
+<div>
+    <main>
+        <h1>Fibonacci Calculator</h1>
+        <p>
+            N =<input type="text" name="fibIndex" id="fibIndex">
+            <button onclick="listener()">Calculate</button>
+        </p>
+        <div id="result">
+            No Input Given
+        </div>
+        <div id="timing">
+            No Timing Calculated
+        </div>
+    </main>
+</div>
+<script>
+        function listener() {
+           let N = document.getElementById("fibIndex").value;
+            var startTime = new Date().getTime();
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open( "GET", 'http://127.0.0.1:8000/fibonacci-calculator/calculate?N='+ N, false );
+            xmlHttp.send( null );
+            var stopTime = new Date().getTime();
+            <!--alert(xmlHttp.responseText);-->
+            let resultDiv = document.getElementById("result");
+            console.log(JSON.parse(xmlHttp.responseText).result);
+            resultDiv.innerHTML = JSON.parse(xmlHttp.responseText).result
+
+            let timingDiv = document.getElementById("timing");
+
+
+            timingDiv.innerHTML = (stopTime - startTime)/1000 + ' seconds';
+        }
+
+</script>
+</body>
+</html>
